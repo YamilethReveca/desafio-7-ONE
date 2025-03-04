@@ -47,6 +47,9 @@ header {
     border-radius: 5px;
     margin-top: 20px;
     background-color: #ffffff;
+    padding: 5px;
+    font-weight: bolder;
+    color: #333333;
     text-align: right;
     font-size: 25px;    
     margin-bottom: 5px;

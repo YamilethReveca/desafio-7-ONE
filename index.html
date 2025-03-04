@@ -16,31 +16,31 @@
         <section class="diseñoCalculadora">
             <input type="text" id="pantalla" value="0" disabled >
             <section class="teclas">
-                <button type="button" class="operator" value="+">+</button>
-                <button type="button" class="operator" value="-">-</button>
-                <button type="button" class="operator" value="*">&times;</button>
-                <button type="button" class="operator" value="/">&divide;</button>
+                <button type="button" class="operator" onclick="appendToDisplay('+')">+</button>
+                <button type="button" class="operator" onclick="appendToDisplay('-')" >-</button>
+                <button type="button" class="operator" onclick="appendToDisplay('*')">&times;</button>
+                <button type="button" class="operator" onclick="appendToDisplay('/')">&divide;</button>
             
-                <button type="button" value="7">7</button>
-                <button type="button" value="8">8</button>
-                <button type="button" value="9">9</button>
-            
-            
-                <button type="button" value="4">4</button>
-                <button type="button" value="5">5</button>
-                <button type="button" value="6">6</button>
+                <button id="7" class="numeros" type="button" onclick="appendToDisplay('7')">7</button>
+                <button id="8" class="numeros" type="button" onclick="appendToDisplay('8')">8</button>
+                <button id="9" class="numeros" type="button" onclick="appendToDisplay('9')">9</button>
             
             
-                <button type="button" value="1">1</button>
-                <button type="button" value="2">2</button>
-                <button type="button" value="3">3</button>
+                <button id="4" class="numeros" type="button" onclick="appendToDisplay('4')">4</button>
+                <button id="5" class="numeros" type="button" onclick="appendToDisplay('5')">5</button>
+                <button id="6" class="numeros" type="button" onclick="appendToDisplay('6')">6</button>
             
             
-                <button type="button" value="0">0</button>
-                <button type="button" class="decimal" value=".">.</button>
-                <button type="button" class="all-clear" value="all-clear">AC</button>
+                <button id="1" class="numeros" type="button" onclick="appendToDisplay('1')">1</button>
+                <button id="2" class="numeros" type="button" onclick="appendToDisplay('2')" >2</button>
+                <button id="3" class="numeros" type="button" onclick="appendToDisplay('3')">3</button>
             
-                <button type="button" class="igual" value="=">=</button>
+            
+                <button type="button" type="button" onclick="appendToDisplay('0')">0</button>
+                <button type="button" class="decimal" onclick="appendToDisplay('.')">.</button>
+                <button type="button" class="all-clear" onclick="clearDisplay()" value="all-clear">AC</button>
+            
+                <button type="button" class="igual" onclick="calculateResult('=')">=</button>
             
 
                  
